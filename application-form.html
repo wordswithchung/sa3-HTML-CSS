@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Skills-HTML-CSS</title>
+</head>
+<body>
+
+<!-- your html goes here -->
+    <h1>Application Form</h1>
+
+    <div class="instructions"><p>Thanks for your interest in Ubermelon! Please fill in the form below to get started.</p></div>
+
+    <form action="/application" method="post">
+        <label for="applicant-first-name">First Name: </label><input id="applicant-first-name" type="text" name="first-name">
+        <label for="applicant-last-name">Last Name: </label><input id="applicant-last-name" type="text" name="last-name">
+        <br>
+        <br>
+        <label for="salary-requirement">Annual Salary Requirement: </label><input id="salary-requirement" type="text" name="salary">
+        <br>
+        <br>
+        <label for="role-interested-in">Select the role you're interested in:</label>
+            <select id="role-interested-in" name="select">
+                <option value="1">Software Engineer</option>
+                <option value="2">QA Engineer</option>
+                <option value="3">Product Manager</option>
+            </select>
+        <br>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
